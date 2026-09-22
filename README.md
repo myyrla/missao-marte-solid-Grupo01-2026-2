@@ -31,3 +31,17 @@ custo que introduz.
 - [Tutorial passo a passo](src/README.md)
 - [Apostilas sobre SOLID](apostilas-solid/SOLID-README.md)
 - [Código inicial do exercício](src/exercicio10/README.md)
+
+## Modelagem UML
+
+### Diagrama de classes do domínio
+
+[Visualizar diagrama de classes](https://app.diagrams.net/#G1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN#%7B%22pageId%22%3A%22mTOh9cwXpSvq7ZEMCus8%22%7D)
+
+O diagrama representa as principais entidades do pacote `solidexercicio10.model`, incluindo classes abstratas, classes concretas, enumeração e interfaces. Também são representadas as relações de herança, implementação de interfaces, associações e multiplicidades entre as entidades, de acordo com a estrutura efetivamente implementada no projeto.
+
+### Diagrama de pacotes do projeto
+
+[Visualizar diagrama de pacotes](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing)
+
+O diagrama representa a organização dos pacotes `solidexercicio10`, `model`, `service`, `presentation` e `repository`, destacando suas principais dependências. A estrutura evidencia que o pacote `service` depende do contrato `RankingRepository`, permitindo que a lógica de negócio utilize a abstração sem depender diretamente dos detalhes da implementação da persistência.
