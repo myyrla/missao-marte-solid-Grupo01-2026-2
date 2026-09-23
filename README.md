@@ -38,7 +38,7 @@ custo que introduz.
 
 [Visualizar imagem no GitHub](docs/uml/diagrama-classes-model.png)
 
-[Visualizar diagrama no Gdraw.io](https://drive.google.com/file/d/1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN/view?usp=sharing)
+[Visualizar diagrama no draw.io](https://drive.google.com/file/d/1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN/view?usp=sharing)
 
 O diagrama representa as principais entidades do pacote `solidexercicio10.model`, incluindo classes abstratas, classes concretas, enumeração e interfaces. Também apresenta as relações de herança, implementação de interfaces, associações e multiplicidades entre as entidades, conforme a estrutura implementada no projeto.
 
@@ -46,7 +46,7 @@ O diagrama representa as principais entidades do pacote `solidexercicio10.model`
 
 [Visualizar diagrama de pacotes (imagem)](docs/uml/diagrama-pacotes.png)
 
-[Visualizar diagrama no draw.io](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing)
+[Visualizar diagrama no draw.io](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing)
 
 O projeto está organizado no pacote principal `solidexercicio10`, que contém a classe `Main` e os subpacotes `model`, `service`, `presentation` e `repository`.
 
