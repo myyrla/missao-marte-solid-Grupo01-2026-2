@@ -36,7 +36,7 @@ custo que introduz.
 
 ### Diagrama de classes do domínio
 
-[Visualizar imagem no GitHub](docs/uml/diagrama-classes-model.png)
+[Visualizar diagrama de classes do domínio](docs/uml/diagrama-classes-model.png)
 
 [Visualizar diagrama no draw.io](https://drive.google.com/file/d/1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN/view?usp=sharing)
 
