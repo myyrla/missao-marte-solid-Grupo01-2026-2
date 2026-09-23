@@ -36,12 +36,31 @@ custo que introduz.
 
 ### Diagrama de classes do domínio
 
-[Visualizar diagrama de classes](https://app.diagrams.net/#G1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN#%7B%22pageId%22%3A%22mTOh9cwXpSvq7ZEMCus8%22%7D)
+[Visualizar imagem no GitHub](docs/uml/diagrama-classes-model.png)
 
-O diagrama representa as principais entidades do pacote `solidexercicio10.model`, incluindo classes abstratas, classes concretas, enumeração e interfaces. Também são representadas as relações de herança, implementação de interfaces, associações e multiplicidades entre as entidades, de acordo com a estrutura efetivamente implementada no projeto.
+[Visualizar diagrama no Gdraw.io](https://drive.google.com/file/d/1v34FQRjx9UyiHlihxl4nbmpREnkkuHlN/view?usp=sharing)
 
-### Diagrama de pacotes do projeto
+O diagrama representa as principais entidades do pacote `solidexercicio10.model`, incluindo classes abstratas, classes concretas, enumeração e interfaces. Também apresenta as relações de herança, implementação de interfaces, associações e multiplicidades entre as entidades, conforme a estrutura implementada no projeto.
 
-[Visualizar diagrama de pacotes](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing)
+### Diagrama de Pacotes
 
-O diagrama representa a organização dos pacotes `solidexercicio10`, `model`, `service`, `presentation` e `repository`, destacando suas principais dependências. A estrutura evidencia que o pacote `service` depende do contrato `RankingRepository`, permitindo que a lógica de negócio utilize a abstração sem depender diretamente dos detalhes da implementação da persistência.
+[Visualizar diagrama de pacotes (imagem)](docs/uml/diagrama-pacotes.png)
+
+[Visualizar diagrama no draw.io]([https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing](https://drive.google.com/file/d/1kQMIQr5LAlwEmta69JxR921DqDECYpVO/view?usp=sharing))
+
+O projeto está organizado no pacote principal `solidexercicio10`, que contém a classe `Main` e os subpacotes `model`, `service`, `presentation` e `repository`.
+
+O pacote `model` reúne as principais entidades e interfaces do domínio. O pacote `presentation` contém o `MapaRenderer`, responsável pela apresentação do mapa. O pacote `repository` define o contrato `RankingRepository` e as classes relacionadas ao armazenamento do ranking. Já o pacote `service` contém o `JogoService`, responsável pela lógica principal da aplicação.
+
+### Dependências principais
+
+- `solidexercicio10` → `service` e `repository`, por meio da configuração realizada pelo `Main`.
+- `service` → `model`, `presentation` e `repository`.
+- `presentation` → `model`.
+- `repository` → `model`.
+
+### Ponto principal da arquitetura
+
+O `service` depende do contrato **`RankingRepository`**, definido como uma interface no pacote `repository`, e não diretamente dos detalhes de persistência.
+
+A classe `Main` fornece a implementação do `RankingRepository` ao serviço. Dessa forma, o `service` trabalha com uma abstração, enquanto os detalhes de como os dados são armazenados ficam separados da lógica principal da aplicação.
